@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweta Kumari - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a202c; /* Dark background */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4a5568; /* Greyish thumb */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #718096; /* Lighter grey on hover */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Header -->
+    <header class="bg-gray-800 shadow-lg fixed w-full z-50 py-4 px-6 md:px-10">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-indigo-400 hover:text-indigo-300 transition duration-300 ease-in-out">Sweta Kumari</a>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#about" class="text-lg font-medium hover:text-indigo-300 transition duration-300 ease-in-out rounded-md px-3 py-2">About</a></li>
+                <li><a href="#skills" class="text-lg font-medium hover:text-indigo-300 transition duration-300 ease-in-out rounded-md px-3 py-2">Skills</a></li>
+                <li><a href="#projects" class="text-lg font-medium hover:text-indigo-300 transition duration-300 ease-in-out rounded-md px-3 py-2">Projects</a></li>
+                <li><a href="#experience" class="text-lg font-medium hover:text-indigo-300 transition duration-300 ease-in-out rounded-md px-3 py-2">Experience</a></li>
+                <li><a href="#contact" class="text-lg font-medium hover:text-indigo-300 transition duration-300 ease-in-out rounded-md px-3 py-2">Contact</a></li>
+            </ul>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-100 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 mt-4 rounded-lg shadow-xl">
+            <ul class="flex flex-col space-y-4 p-4">
+                <li><a href="#about" class="block text-lg font-medium hover:text-indigo-300 transition duration-300 ease-in-out rounded-md px-3 py-2">About</a></li>
+                <li><a href="#skills" class="block text-lg font-medium hover:text-indigo-300 transition duration-300 ease-in-out rounded-md px-3 py-2">Skills</a></li>
+                <li><a href="#projects" class="block text-lg font-medium hover:text-indigo-300 transition duration-300 ease-in-out rounded-md px-3 py-2">Projects</a></li>
+                <li><a href="#experience" class="block text-lg font-medium hover:text-indigo-300 transition duration-300 ease-in-out rounded-md px-3 py-2">Experience</a></li>
+                <li><a href="#contact" class="block text-lg font-medium hover:text-indigo-300 transition duration-300 ease-in-out rounded-md px-3 py-2">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-800 to-gray-900 text-center py-16 px-4">
+            <div class="max-w-4xl mx-auto">
+                <img src="https://placehold.co/150x150/2d3748/a0aec0?text=SK" alt="Sweta Kumari" class="rounded-full w-36 h-36 mx-auto mb-6 border-4 border-indigo-500 shadow-xl animate-fade-in-up">
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4 animate-fade-in-up delay-100">
+                    Hello, I'm <span class="text-indigo-400">Sweta Kumari</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in-up delay-200">
+                    A passionate Computer Science & Engineering student with a focus on building impactful solutions.
+                </p>
+                <div class="flex justify-center space-x-6 animate-fade-in-up delay-300">
+                    <a href="#projects" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">View Projects</a>
+                    <a href="#contact" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-16 px-4 bg-gray-900">
+            <div class="container mx-auto max-w-5xl">
+                <h2 class="text-4xl font-bold text-center text-indigo-400 mb-12">About Me</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <p class="text-lg leading-relaxed text-gray-300">
+                            I am a dedicated Computer Science & Engineering student at Vellore Institute Of Technology, Bhopal, with a strong academic record (9.10 GPA). My journey in technology is driven by a curiosity to learn and a passion for creating impactful solutions.
+                        </p>
+                        <p class="text-lg leading-relaxed text-gray-300">
+                            My interests lie in leveraging technology to solve real-world problems, from developing AI-driven disaster management platforms to building intuitive web interfaces. I thrive in collaborative environments and am always eager to expand my knowledge and skill set.
+                        </p>
+                        <p class="text-lg leading-relaxed text-gray-300">
+                            Beyond academics, I actively engage in projects that challenge me and contribute to meaningful causes. I am committed to continuous learning and applying my skills to make a positive difference.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-semibold text-indigo-300 mb-6">Education</h3>
+                        <div class="space-y-6">
+                            <div class="bg-gray-800 p-6 rounded-lg shadow-md border border-gray-700">
+                                <h4 class="text-xl font-semibold text-gray-100">Computer Science & Engineering</h4>
+                                <p class="text-indigo-400">Vellore Institute Of Technology, Bhopal</p>
+                                <p class="text-gray-400">May 2023 - Present | Kothri-Kalan</p>
+                                <p class="text-gray-300">GPA: 9.10</p>
+                            </div>
+                            <div class="bg-gray-800 p-6 rounded-lg shadow-md border border-gray-700">
+                                <h4 class="text-xl font-semibold text-gray-100">Class 12th</h4>
+                                <p class="text-indigo-400">St. Wilfred School</p>
+                                <p class="text-gray-400">Percentage: 83%</p>
+                            </div>
+                            <div class="bg-gray-800 p-6 rounded-lg shadow-md border border-gray-700">
+                                <h4 class="text-xl font-semibold text-gray-100">Class 10th</h4>
+                                <p class="text-indigo-400">Dav Public School, New Panvel</p>
+                                <p class="text-gray-400">Percentage: 95%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16 px-4 bg-gray-800">
+            <div class="container mx-auto max-w-5xl">
+                <h2 class="text-4xl font-bold text-center text-indigo-400 mb-12">Skills</h2>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <span class="bg-gray-700 text-indigo-300 px-6 py-3 rounded-full text-lg font-medium shadow-md hover:bg-gray-600 transition duration-300 ease-in-out transform hover:scale-105">Python</span>
+                    <span class="bg-gray-700 text-indigo-300 px-6 py-3 rounded-full text-lg font-medium shadow-md hover:bg-gray-600 transition duration-300 ease-in-out transform hover:scale-105">Machine Learning</span>
+                    <span class="bg-gray-700 text-indigo-300 px-6 py-3 rounded-full text-lg font-medium shadow-md hover:bg-gray-600 transition duration-300 ease-in-out transform hover:scale-105">Frontend Development</span>
+                    <span class="bg-gray-700 text-indigo-300 px-6 py-3 rounded-full text-lg font-medium shadow-md hover:bg-gray-600 transition duration-300 ease-in-out transform hover:scale-105">Backend Development</span>
+                    <span class="bg-gray-700 text-indigo-300 px-6 py-3 rounded-full text-lg font-medium shadow-md hover:bg-gray-600 transition duration-300 ease-in-out transform hover:scale-105">JavaScript</span>
+                    <span class="bg-gray-700 text-indigo-300 px-6 py-3 rounded-full text-lg font-medium shadow-md hover:bg-gray-600 transition duration-300 ease-in-out transform hover:scale-105">HTML/CSS</span>
+                    <span class="bg-gray-700 text-indigo-300 px-6 py-3 rounded-full text-lg font-medium shadow-md hover:bg-gray-600 transition duration-300 ease-in-out transform hover:scale-105">React</span>
+                    <span class="bg-gray-700 text-indigo-300 px-6 py-3 rounded-full text-lg font-medium shadow-md hover:bg-gray-600 transition duration-300 ease-in-out transform hover:scale-105">Next.js</span>
+                    <span class="bg-gray-700 text-indigo-300 px-6 py-3 rounded-full text-lg font-medium shadow-md hover:bg-gray-600 transition duration-300 ease-in-out transform hover:scale-105">Node.js</span>
+                    <span class="bg-gray-700 text-indigo-300 px-6 py-3 rounded-full text-lg font-medium shadow-md hover:bg-gray-600 transition duration-300 ease-in-out transform hover:scale-105">PostgreSQL</span>
+                    <span class="bg-gray-700 text-indigo-300 px-6 py-3 rounded-full text-lg font-medium shadow-md hover:bg-gray-600 transition duration-300 ease-in-out transform hover:scale-105">Mapbox</span>
+                    <span class="bg-gray-700 text-indigo-300 px-6 py-3 rounded-full text-lg font-medium shadow-md hover:bg-gray-600 transition duration-300 ease-in-out transform hover:scale-105">Streamlit</span>
+                    <span class="bg-gray-700 text-indigo-300 px-6 py-3 rounded-full text-lg font-medium shadow-md hover:bg-gray-600 transition duration-300 ease-in-out transform hover:scale-105">Scikit-learn</span>
+                </div>
+                <div class="text-center mt-12">
+                    <h3 class="text-2xl font-semibold text-indigo-300 mb-4">Certifications</h3>
+                    <p class="text-lg text-gray-300 bg-gray-700 p-4 rounded-lg inline-block shadow-md border border-gray-600">
+                        NPTEL: Introduction to Machine Learning (top 5%)
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 px-4 bg-gray-900">
+            <div class="container mx-auto max-w-5xl">
+                <h2 class="text-4xl font-bold text-center text-indigo-400 mb-12">My Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1: Sahaay -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-xl border border-gray-700 transform hover:scale-105 transition duration-300 ease-in-out">
+                        <h3 class="text-2xl font-semibold text-indigo-300 mb-4">Sahaay - A Disaster Management Platform</h3>
+                        <p class="text-gray-400 text-sm mb-4">May 2025 - July 2025</p>
+                        <p class="text-gray-300 mb-6">
+                            Sahaay is a web-based disaster relief platform that empowers victims and NGOs with AI-driven tools for efficient crisis response.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-300 mb-6 space-y-2">
+                            <li><strong>NGO Resource Predictor (85% accuracy):</strong> Random Forest-based ML model forecasting supply shortages (food, medicine, shelter).</li>
+                            <li><strong>NGO Directory:</strong> Verified database of NGOs across India for seamless coordination.</li>
+                            <li><strong>3D Disaster Maps:</strong> Interactive Mapbox-powered visualizations of flood-impacted zones for real-time situational awareness.</li>
+                        </ul>
+                        <p class="text-sm text-gray-500 mb-4">
+                            <span class="font-semibold text-gray-400">Tech Stack:</span> Python (Streamlit, Scikit-learn), JavaScript, HTML/CSS, Mapbox
+                        </p>
+                        <a href="https://github.com/sweta123761/Sahaay" target="_blank" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-5 rounded-full text-sm shadow-md">
+                            GitHub Project
+                        </a>
+                    </div>
+
+                    <!-- Project 2: Bhoomijal -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-xl border border-gray-700 transform hover:scale-105 transition duration-300 ease-in-out">
+                        <h3 class="text-2xl font-semibold text-indigo-300 mb-4">Bhoomijal - Ground Water Conservation</h3>
+                        <p class="text-gray-400 text-sm mb-4">May 2024 - 2024</p>
+                        <p class="text-gray-300 mb-6">
+                            Designed an educational platform to raise awareness about groundwater conservation and usage.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-300 mb-6 space-y-2">
+                            <li>Includes interactive visualizations, facts, and resources for users.</li>
+                        </ul>
+                        <p class="text-sm text-gray-500 mb-4">
+                            <span class="font-semibold text-gray-400">Tech Stack:</span> HTML, CSS, JavaScript
+                        </p>
+                        <a href="https://github.com/sweta123761/Bhoomijal" target="_blank" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-5 rounded-full text-sm shadow-md">
+                            GitHub Project
+                        </a>
+                    </div>
+
+                    <!-- Project 3: VITCULT-Club Website -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-xl border border-gray-700 transform hover:scale-105 transition duration-300 ease-in-out">
+                        <h3 class="text-2xl font-semibold text-indigo-300 mb-4">VITCULT-Club Website for VIT Karunaadu Unnati</h3>
+                        <p class="text-gray-400 text-sm mb-4">February 2025</p>
+                        <p class="text-gray-300 mb-6">
+                            Built responsive UI components for the club's cultural platform and integrated with backend APIs.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-300 mb-6 space-y-2">
+                            <li>Deployed via Vercel.</li>
+                            <li>Collaborated in a cross-functional team to deliver a scalable, event-focused website.</li>
+                        </ul>
+                        <p class="text-sm text-gray-500 mb-4">
+                            <span class="font-semibold text-gray-400">Tech Stack:</span> React, Next.js, Node.js, PostgreSQL, Vercel
+                        </p>
+                        <a href="https://github.com/Nithin9585/VITKULT-VIT-Karunaadu-Unnati-for-Language-and-Technology" target="_blank" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-5 rounded-full text-sm shadow-md">
+                            GitHub Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section id="experience" class="py-16 px-4 bg-gray-800">
+            <div class="container mx-auto max-w-5xl">
+                <h2 class="text-4xl font-bold text-center text-indigo-400 mb-12">Professional Experience</h2>
+                <div class="bg-gray-900 p-8 rounded-lg shadow-xl border border-gray-700">
+                    <h3 class="text-2xl font-semibold text-indigo-300 mb-2">Frontend Developer</h3>
+                    <p class="text-gray-400 text-lg mb-4">VItCult-Club</p>
+                    <p class="text-gray-300 leading-relaxed">
+                        Contributed significantly to the frontend development of the VItCult-Club website, building responsive UI components and ensuring seamless user experience. This involved working with modern web technologies and collaborating within a team to deliver a robust platform.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 px-4 bg-gray-900">
+            <div class="container mx-auto max-w-3xl text-center">
+                <h2 class="text-4xl font-bold text-indigo-400 mb-8">Get in Touch</h2>
+                <p class="text-lg text-gray-300 mb-8">
+                    I'm always open to new opportunities and collaborations. Feel free to reach out!
+                </p>
+                <div class="space-y-4 mb-8">
+                    <p class="text-xl text-gray-200">
+                        Email: <a href="mailto:Sweta.23bce11754@vitbhopal.ac.in" class="text-indigo-400 hover:underline">Sweta.23bce11754@vitbhopal.ac.in</a>
+                    </p>
+                    <p class="text-xl text-gray-200">
+                        Phone: <a href="tel:+918779348739" class="text-indigo-400 hover:underline">08779348739</a>
+                    </p>
+                    <p class="text-xl text-gray-200">
+                        Location: Kothri-Kalan
+                    </p>
+                </div>
+                <div class="flex justify-center space-x-6">
+                    <a href="YOUR_LINKEDIN_PROFILE_LINK_HERE" target="_blank" class="text-indigo-400 hover:text-indigo-300 transition duration-300 ease-in-out transform hover:scale-110">
+                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                    <a href="YOUR_GITHUB_PROFILE_LINK_HERE" target="_blank" class="text-indigo-400 hover:text-indigo-300 transition duration-300 ease-in-out transform hover:scale-110">
+                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11 0-.258 0-.573v-2.21c-3.342.727-4.043-1.61-4.043-1.61-.546-1.387-1.332-1.758-1.332-1.758-1.09-.745.083-.73.083-.73 1.205.084 1.838 1.237 1.838 1.237 1.07 1.833 2.807 1.304 3.49.997.108-.775.418-1.304.762-1.604-2.665-.304-5.466-1.333-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.12-.304-.535-1.523.117-3.176 0 0 1.006-.32 3.307 1.23.957-.266 1.983-.4 3.003-.404 1.02.004 2.046.138 3.003.404 2.301-1.55 3.307-1.23 3.307-1.23.652 1.653.237 2.872.117 3.176.77.84 1.235 1.91 1.235 3.22 0 4.597-2.802 5.62-5.475 5.92.43.37.823 1.102.823 2.222v3.293c0 .319-.208.688 0 .573C20.562 21.807 24 17.303 24 12c0-6.627-5.373-12-12-12z" clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 text-center text-gray-400 text-sm">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 Sweta Kumari. All rights reserved.</p>
+            <p>Built with <span class="text-red-500">&hearts;</span> and Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu after clicking a link
+                if (document.getElementById('mobile-menu').classList.contains('block')) {
+                    document.getElementById('mobile-menu').classList.remove('block');
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('block');
+        });
+
+        // Optional: Close mobile menu when clicking outside (for larger screens)
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) { // md breakpoint in Tailwind
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('block');
+            }
+        });
+    </script>
+</body>
+</html>
